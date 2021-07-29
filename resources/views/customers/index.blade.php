@@ -5,7 +5,7 @@
 <div class="container mt-2">
     <div class="row mb-2">
         <div class="col">
-            <a href="/register" class="btn btn-success">
+            <a href="{{ route('customers.create') }}" class="btn btn-success">
                 <span>Novo Registro</span>
             </a>
         </div>
@@ -27,13 +27,13 @@
                         <td>João da Silva</td>
                         <td>email@email</td>
                         <td>
-                            <a href="/to-view" class="btn btn-primary">
+                            <a href="/customers/1/show" class="btn btn-primary">
                                 <span>Visualizar</span>
                             </a>
-                            <a href="/edit" class="btn btn-primary">
+                            <a href="/customers/1/edit" class="btn btn-primary">
                                 <span>Editar</span>
                             </a>
-                            <a href="/" class="btn btn-primary">
+                            <a href="/customers/index" class="btn btn-primary">
                                 <span>Remover</span>
                             </a>
                         </td>
@@ -46,7 +46,7 @@
                         <td>Kay</td>
                         <td>kay@hotmail.com</td>
                         <td>
-                            <a href="/" class="btn btn-primary">
+                            <a href="/customers/1/show" class="btn btn-primary">
                                 <span>Visualizar</span>
                             </a>
                             <a href="/edit" class="btn btn-primary">

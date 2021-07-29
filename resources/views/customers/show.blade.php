@@ -14,7 +14,7 @@
         </ul>
     </div>
     <div class="btn-lg mx-auto">
-        <a href="/list"><button class="btn btn-primary">
+        <a href="{{ route('customers.index') }}"><button class="btn btn-primary">
                 Voltar
             </button></a>
     </div>

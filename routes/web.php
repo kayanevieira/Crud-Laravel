@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/register', "CustomersController@register");
+Route::get('/customers/create', "CustomersController@create")->name('customers.create');
 
-Route::get('/edit', "CustomersController@edit");
+Route::get('/customers/{id}/edit', "CustomersController@edit")->name('customers.edit');
 
-Route::get('/list', "CustomersController@list");
+Route::get('/customers/index', "CustomersController@index")->name('customers.index');
 
-Route::get('/to-view', "CustomersController@toView");
+Route::get('/customers/{id}/show', "CustomersController@show")->name('customers.show');

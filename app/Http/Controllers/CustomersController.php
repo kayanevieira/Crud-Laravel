@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class CustomersController extends Controller
 {
-    public function register()
+    public function create()
     {
-        return view("customers.register", [
+        return view("customers.create", [
             'title' => 'Cadastrar Cliente'
         ]);
     }
@@ -20,16 +20,16 @@ class CustomersController extends Controller
         ]);
     }
 
-    public function list()
+    public function index()
     {
-        return view("customers.list", [
+        return view("customers.index", [
             'title' => 'Listagem de Clientes'
         ]);
     }
 
-    public function toView()
+    public function show()
     {
-        return view("customers.to-view", [
+        return view("customers.show", [
             'title' => 'Visualização de Cliente'
         ]);
     }
