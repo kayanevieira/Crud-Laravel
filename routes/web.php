@@ -17,6 +17,6 @@ Route::get('/customers/create', "CustomersController@create")->name('customers.c
 
 Route::get('/customers/{id}/edit', "CustomersController@edit")->name('customers.edit');
 
-Route::get('/customers/index', "CustomersController@index")->name('customers.index');
+Route::get('/customers', "CustomersController@index")->name('customers.index');
 
-Route::get('/customers/{id}/show', "CustomersController@show")->name('customers.show');
+Route::get('/customers/{id}', "CustomersController@show")->name('customers.show');

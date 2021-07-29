@@ -27,40 +27,43 @@
                         <td>João da Silva</td>
                         <td>email@email</td>
                         <td>
-                            <a href="/customers/1/show" class="btn btn-primary">
-                                <span>Visualizar</span>
-                            </a>
-                            <a href="/customers/1/edit" class="btn btn-primary">
-                                <span>Editar</span>
-                            </a>
-                            <a href="/customers/index" class="btn btn-primary">
-                                <span>Remover</span>
-                            </a>
+                            <div class="btn-group">
+                                <a href="/customers/1" class="btn btn-primary">
+                                    <span>Visualizar</span>
+                                </a>
+                                <a href="/customers/1/edit" class="btn btn-primary">
+                                    <span>Editar</span>
+                                </a>
+                                <a href="/customers" class="btn btn-primary">
+                                    <span>Remover</span>
+                                </a>
                         </td>
                     </tr>
                 </tbody>
-
-                <tbody>
-                    <tr>
-                        <td>2</td>
-                        <td>Kay</td>
-                        <td>kay@hotmail.com</td>
-                        <td>
-                            <a href="/customers/1/show" class="btn btn-primary">
-                                <span>Visualizar</span>
-                            </a>
-                            <a href="/edit" class="btn btn-primary">
-                                <span>Editar</span>
-                            </a>
-                            <a href="/" class="btn btn-primary">
-                                <span>Remover</span>
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
+        <tbody>
+            <tr>
+                <td>2</td>
+                <td>Kay</td>
+                <td>kay@hotmail.com</td>
+                <td>
+                    <div class="btn-group">
+                        <a href="/customers/1/show" class="btn btn-primary">
+                            <span>Visualizar</span>
+                        </a>
+                        <a href="/edit" class="btn btn-primary">
+                            <span>Editar</span>
+                        </a>
+                        <a href="/" class="btn btn-primary">
+                            <span>Remover</span>
+                        </a>
+                </td>
+            </tr>
+        </tbody>
+        </table>
     </div>
+</div>
+</div>
 </div>
 
 @endsection
