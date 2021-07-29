@@ -13,8 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', "HomeController@index");
+Route::get('/register', "CustomersController@register");
 
-Route::get('/edit', "HomeController@edit");
+Route::get('/edit', "CustomersController@edit");
 
-Route::get('/list', "HomeController@list");
+Route::get('/list', "CustomersController@list");
+
+Route::get('/to-view', "CustomersController@toView");
