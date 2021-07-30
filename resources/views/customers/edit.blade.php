@@ -3,7 +3,7 @@
 @include('components.navbar')
 
 <div class="container">
-    <form class="form-group">
+    <form class="form-group" >
         <h1 class="d-flex justify-content-center m-3">Editar</h1>
         <label for="Nome">Nome</label>
         <input type="text" placeholder="Nome..." class="form-control">

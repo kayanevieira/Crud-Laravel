@@ -6,10 +6,10 @@
     <div class="card-body mx-auto" style="width:45rem;">
         <ul class="list-group">
             <li class="list-group-item">
-                <b>Nome</b>: Joana
+                <b>Nome</b>: {{ $customer->name }}
             </li>
             <li class="list-group-item">
-                <b>E-mail</b>: joana@hotmail.com
+                <b>E-mail</b>: {{ $customer->email }}
             </li>
         </ul>
     </div>
