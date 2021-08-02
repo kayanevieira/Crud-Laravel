@@ -48,9 +48,12 @@
                                         <a href="{{ route('customers.edit', ['id' => $customer->id]) }}" class="btn btn-primary">
                                             <span>Editar</span>
                                         </a>
-                                        <a href="/" class="btn btn-danger">
-                                            <span>Remover</span>
-                                        </a>
+                                        <form method="POST" class="btn-group"
+                                        action="{{ route('customers.destroy', ['id' => $customer->id]) }}">
+                                        @method('delete')
+                                        @csrf
+                                        <button class="btn btn-danger">Deletar</button>
+                                    </form>
                                     </div>
                                 </td>
                             </tr>

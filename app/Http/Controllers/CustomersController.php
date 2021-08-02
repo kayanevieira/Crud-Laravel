@@ -67,4 +67,16 @@ class CustomersController extends Controller
             'Cliente atualizado com sucesso'
         );
     }
+
+    public function destroy($id)
+    {
+        $customer = Customer::findOrFail($id);
+
+        $customer->delete();
+
+        return redirect()->route('customers.index')->with(
+            'success',
+            'Cliente removido com sucesso'
+        );
+    }
 }

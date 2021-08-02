@@ -23,4 +23,6 @@ Route::get('/customers/{id}', "CustomersController@show")->name('customers.show'
 Route::get('/customers/{id}/edit', "CustomersController@edit")->name('customers.edit');
 Route::put('/customers/{id}', 'CustomersController@update')->name('customers.update');
 
+Route::delete('/customers/{id}', 'CustomersController@destroy')->name('customers.destroy');
+
 
