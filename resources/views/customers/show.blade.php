@@ -11,6 +11,9 @@
             <li class="list-group-item">
                 <b>E-mail</b>: {{ $customer->email }}
             </li>
+            <li class="list-group-item">
+                <b>Data de Nascimento</b>: {{ $customer->birthday }}
+            </li>
         </ul>
     </div>
     <div class="btn-lg mx-auto">

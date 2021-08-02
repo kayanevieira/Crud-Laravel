@@ -27,7 +27,9 @@
                             <td>Código</td>
                             <td>Nome</td>
                             <td>E-mail</td>
+                            <td>Data de Nascimento</td>
                             <td>Ações</td>
+
                         </tr>
                     </thead>
                     <tbody>
@@ -36,6 +38,7 @@
                                 <td>{{ $customer->id }}</td>
                                 <td>{{ $customer->name }}</td>
                                 <td>{{ $customer->email }}</td>
+                                <td>{{ $customer->birthday }}</td>
                                 <td>
                                     <div class="btn-group">
                                         <a href="{{ route('customers.show', ['id' => $customer->id]) }}"
