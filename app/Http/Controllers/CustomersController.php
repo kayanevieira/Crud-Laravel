@@ -19,7 +19,7 @@ class CustomersController extends Controller
     {
         return view("customers.edit", [
             'title' => 'Editar Cliente',
-            'customer'=> Customer::find($id)
+            'customer' => Customer::find($id)
         ]);
     }
 
@@ -49,5 +49,22 @@ class CustomersController extends Controller
 
         Customer::create($data);
         return redirect()->route('customers.index');
+    }
+
+    public function update(Request $request, $id)
+    {
+        $data = $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|email|max:255|unique:customers,email,' . $id,
+            'birthday' => 'required|date'
+        ]);
+        $customer = Customer::findOrFail($id);
+
+        $customer->update($data);
+
+        return redirect()->route('customers.index')->with(
+            'success',
+            'Cliente atualizado com sucesso'
+        );
     }
 }
