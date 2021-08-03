@@ -65,7 +65,7 @@
 
         <div class="row">
             <div class="col">
-                {{-- {{ $customers->links() }} --}}
+                 {{ $customers->links() }}
             </div>
         </div>
     </div>

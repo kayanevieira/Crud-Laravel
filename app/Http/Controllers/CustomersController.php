@@ -27,7 +27,7 @@ class CustomersController extends Controller
     {
         return view("customers.index", [
             'title' => 'Listagem de Clientes',
-            'customers' => Customer::all()
+            'customers' => Customer::simplePaginate(4)
         ]);
     }
 
