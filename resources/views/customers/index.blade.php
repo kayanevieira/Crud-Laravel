@@ -49,7 +49,7 @@
                                             <span>Editar</span>
                                         </a>
                                         <form method="POST" class="btn-group"
-                                        action="{{ route('customers.destroy', ['id' => $customer->id]) }}">
+                                        action="{{ route('customers.destroy', ['id' => $customer->id]) }}" onsubmit="return confirm('Tem certeza que deseja deletar?')">
                                         @method('delete')
                                         @csrf
                                         <button class="btn btn-danger">Deletar</button>
