@@ -12,6 +12,8 @@
                 </div>
             </div>
         @endif
+
+
         <div class="row mb-2">
             <div class="col">
                 <a href="{{ route('customers.create') }}" class="btn btn-success">
@@ -19,6 +21,8 @@
                 </a>
             </div>
         </div>
+
+        
         <div class="row">
             <div class="col">
                 <table class="table table-bordered">
@@ -45,15 +49,17 @@
                                             class="btn btn-warning">
                                             <span>Visualizar</span>
                                         </a>
-                                        <a href="{{ route('customers.edit', ['id' => $customer->id]) }}" class="btn btn-primary">
+                                        <a href="{{ route('customers.edit', ['id' => $customer->id]) }}"
+                                            class="btn btn-primary">
                                             <span>Editar</span>
                                         </a>
                                         <form method="POST" class="btn-group"
-                                        action="{{ route('customers.destroy', ['id' => $customer->id]) }}" onsubmit="return confirm('Tem certeza que deseja deletar?')">
-                                        @method('delete')
-                                        @csrf
-                                        <button class="btn btn-danger">Deletar</button>
-                                    </form>
+                                            action="{{ route('customers.destroy', ['id' => $customer->id]) }}"
+                                            onsubmit="return confirm('Tem certeza que deseja deletar?')">
+                                            @method('delete')
+                                            @csrf
+                                            <button class="btn btn-danger">Deletar</button>
+                                        </form>
                                     </div>
                                 </td>
                             </tr>
@@ -65,7 +71,7 @@
 
         <div class="row">
             <div class="col">
-                 {{ $customers->links() }}
+                {{ $customers->links() }}
             </div>
         </div>
     </div>
