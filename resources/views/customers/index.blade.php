@@ -3,6 +3,18 @@
     @include('components.navbar')
 
     <div class="container mt-2">
+
+        @if (Session::has('registerSuccess'))
+            <div class="row">
+                <div class="col">
+                    <div class="alert alert-success">
+                        {{ session()->get('registerSuccess') }}
+                    </div>
+                </div>
+            </div>
+        @endif
+
+
         @if (session()->has('success'))
             <div class="row">
                 <div class="col">
@@ -22,7 +34,7 @@
             </div>
         </div>
 
-        
+
         <div class="row">
             <div class="col">
                 <table class="table table-bordered">

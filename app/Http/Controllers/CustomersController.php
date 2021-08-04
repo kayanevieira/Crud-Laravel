@@ -48,6 +48,9 @@ class CustomersController extends Controller
         ]);
 
         Customer::create($data);
+
+        $request->session()->flash('registerSuccess', 'Cliente cadastrado com sucesso!');
+
         return redirect()->route('customers.index');
     }
 
